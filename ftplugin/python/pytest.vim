@@ -820,7 +820,7 @@ function! s:ParseSuccess(stdout) abort
         " to black
         hi GreenBar ctermfg=black ctermbg=green guibg=#719e07 guifg=black
         echohl GreenBar
-        echon passed
+        echon passed . repeat(" ",&columns / 2)
         echohl
     else
         " At this point we have parsed the output and have not been able to
